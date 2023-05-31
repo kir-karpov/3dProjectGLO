@@ -1,2 +1,6 @@
 import timer from "./modules/timer";
-timer('5 june 2023');
+import menu from "./modules/menu";
+import modal from "./modules/modal";
+modal();
+timer("5 june 2023");
+menu();
