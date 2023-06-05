@@ -3,27 +3,27 @@ const modal = () => {
   const buttons = document.querySelectorAll(".popup-btn");
   const closeBtn = modalPopup.querySelector(".popup-close");
 
-  const isMobile = window.innerWidth < 768; 
+  const isMobile = window.innerWidth < 768;
 
   const showModal = () => {
     modalPopup.style.display = "block";
     if (!isMobile) {
-      animateModal(0, 1); 
+      animateModal(0, 1);
     }
   };
 
   const hideModal = () => {
     if (!isMobile) {
       animateModal(1, 0, () => {
-        modalPopup.style.display = "none"; 
+        modalPopup.style.display = "none";
       });
     } else {
-      modalPopup.style.display = "none"; 
+      modalPopup.style.display = "none";
     }
   };
 
   const animateModal = (start, end, callback) => {
-    const duration = 500; 
+    const duration = 500;
     const startTime = performance.now();
 
     const animate = (currentTime) => {
@@ -45,11 +45,13 @@ const modal = () => {
     requestAnimationFrame(animate);
   };
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", showModal);
+  document.addEventListener("click", (e) => {
+    if (e.target.closest(".popup-btn")) {
+      showModal();
+    } else if (e.target === closeBtn || !e.target.closest(".popup-content")) {
+      hideModal();
+    }
   });
-
-  closeBtn.addEventListener("click", hideModal);
 };
 
 export default modal;

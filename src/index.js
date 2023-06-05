@@ -5,8 +5,9 @@ import calculator from "./modules/calculator";
 import validationForms from "./modules/validationForms";
 import validationEmail from "./modules/validationEmail";
 import validationPhone from "./modules/validationPhone";
-
+import tabs from "./modules/tabs";
 validationForms();
+tabs();
 validationPhone();
 validationEmail();
 modal();
