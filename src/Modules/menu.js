@@ -2,7 +2,7 @@ const menu = () => {
   const menuBtn = document.querySelector(".menu");
   const menuElement = document.querySelector("menu");
   const closeBtn = menuElement.querySelector(".close-btn");
-  const menuItems = menuElement.querySelector("ul>li>a");
+  const menuItems = menuElement.querySelectorAll("ul>li>a");
 
   const handleMenu = () => {
     menuElement.classList.toggle("active-menu");
