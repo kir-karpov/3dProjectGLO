@@ -7,6 +7,8 @@ import validationEmail from "./modules/validationEmail";
 import validationPhone from "./modules/validationPhone";
 import slider from "./modules/slider";
 import tabs from "./modules/tabs";
+import calc from "./modules/calc";
+calc(3000);
 validationForms();
 tabs();
 validationPhone();

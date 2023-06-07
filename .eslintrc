@@ -9,7 +9,7 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "ignorePatterns": ["dist/*", "webpack.config.js", "src/Modules/timer.js", "src/Modules/menu.js", "src/Modules/modal.js", "src/index.js", "src/Modules/calculator.js","src/Modules/validationForms.js", "src/Modules/validationEmail.js","src/Modules/validationPhone.js", "src/Modules/tabs.js","src/Modules/slider.js"],
+  "ignorePatterns": ["dist/*", "webpack.config.js", "src/Modules/timer.js", "src/Modules/menu.js", "src/Modules/modal.js", "src/index.js", "src/Modules/calculator.js","src/Modules/validationForms.js", "src/Modules/validationEmail.js","src/Modules/validationPhone.js", "src/Modules/tabs.js","src/Modules/slider.js", "src/Modules/calc.js"],
   "rules": {
     "indent": [
       "error",
