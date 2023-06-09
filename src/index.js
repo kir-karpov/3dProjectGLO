@@ -8,6 +8,8 @@ import validationPhone from "./modules/validationPhone";
 import slider from "./modules/slider";
 import tabs from "./modules/tabs";
 import calc from "./modules/calc";
+import helperOne from "./modules/helperOne";
+helperOne();
 calc(3000);
 validationForms();
 tabs();

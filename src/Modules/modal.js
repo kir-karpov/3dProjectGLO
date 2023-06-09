@@ -1,9 +1,24 @@
+import { slicer, animate } from "./helpers";
+
+
 const modal = () => {
   const modalPopup = document.querySelector(".popup");
   const buttons = document.querySelectorAll(".popup-btn");
   const closeBtn = modalPopup.querySelector(".popup-close");
 
   const isMobile = window.innerWidth < 768;
+
+
+animate({
+  duration: 3000,
+  timing(timeFraction,) {
+    return timeFraction;
+  },
+  draw(progress) {
+    modalPopup.style.width = progress * 300 + '%';
+  }
+});
+
 
   const showModal = () => {
     modalPopup.style.display = "block";
