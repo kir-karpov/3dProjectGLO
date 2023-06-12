@@ -1,4 +1,5 @@
 import timer from "./modules/timer";
+import sendForm from "./Modules/sendForm";
 import menu from "./modules/menu";
 import modal from "./modules/modal";
 import calculator from "./modules/calculator";
@@ -7,9 +8,12 @@ import validationEmail from "./modules/validationEmail";
 import validationPhone from "./modules/validationPhone";
 import slider from "./modules/slider";
 import tabs from "./modules/tabs";
+import maskPhone from "./modules/maskPhone";
 import calc from "./modules/calc";
 import helperOne from "./modules/helperOne";
+sendForm({formId:'form1', someElem: [{type:'block',id:'total' }] });
 helperOne();
+maskPhone();
 calc(3000);
 validationForms();
 tabs();
