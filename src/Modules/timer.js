@@ -1,5 +1,4 @@
 const timer = (deadline) => {
-  console.log(deadline);
   const timeHours = document.getElementById("timer-hours")
   const timeMinutes = document.getElementById("timer-minutes")
   const timeSeconds = document.getElementById("timer-seconds")

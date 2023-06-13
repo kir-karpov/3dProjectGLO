@@ -21,6 +21,6 @@ validationPhone();
 validationEmail();
 modal();
 calculator();
-timer("5 june 2023");
+timer("30 june 2023");
 menu();
 slider();
